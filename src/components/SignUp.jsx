@@ -1,8 +1,18 @@
 import { useState } from "react";
 import googleLogo from "../assets/gogle.png";
 import Spinner from "./Spinner";
+import { setDoc, doc, serverTimestamp } from "firebase/firestore";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  updateProfile,
+} from "firebase/auth";
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
+import { db } from "../firebase-config";
 
 function SignUp({ closeModal }) {
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -11,7 +21,7 @@ function SignUp({ closeModal }) {
     password2: "",
   });
 
-  const { name, email, password } = formData;
+  const { name, email, password, password2 } = formData;
 
   const handleInputChange = (e) => {
     setFormData((prevState) => ({
@@ -20,7 +30,48 @@ function SignUp({ closeModal }) {
     }));
   };
 
-  //   if (isLoading) return <Spinner />;
+  const registerUser = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const auth = getAuth();
+
+    if (password !== password2) {
+      toast.error("The two passwords do not match!");
+      setLoading(false);
+      return;
+    }
+    createUserWithEmailAndPassword(auth, email, password)
+      .then(async (userCredential) => {
+        // Signed in
+        const user = userCredential.user;
+
+        updateProfile(auth.currentUser, {
+          displayName: name,
+        });
+        const formDataCopy = { ...formData };
+        delete formDataCopy.password;
+        delete formDataCopy.password2;
+        formDataCopy.timestamp = serverTimestamp();
+
+        await setDoc(doc(db, "users", user.uid), formDataCopy);
+
+        setLoading(false);
+        toast.success(`${user.email} registered succesfully!`);
+        navigate("/");
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        const errorCode = errorMessage.match(/auth\/\S+/)[0].split("/")[1];
+        const errorName = errorCode.replace(/-/g, " ");
+        const capitalizedErrorName =
+          errorName.charAt(0).toUpperCase() + errorName.slice(1);
+        toast.error(capitalizedErrorName.slice(0, -1));
+        setLoading(false);
+      });
+  };
+
+  if (loading) return <Spinner />;
 
   return (
     <div className="z-20 fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 flex justify-center items-center">
@@ -45,7 +96,7 @@ function SignUp({ closeModal }) {
 
         <form
           className="flex flex-col justify-center items-center my-4"
-          //   onSubmit={registerUser}
+          onSubmit={registerUser}
         >
           <input
             className="outline-none border text-sm border-[#0000004d] mb-3 py-2 pl-2 w-8/12 lg:w-4/12 rounded-xl"
@@ -76,7 +127,7 @@ function SignUp({ closeModal }) {
             name="password2"
             type="password"
             placeholder="Confirm Password"
-            // value={password2}
+            value={password2}
             onChange={handleInputChange}
           />
 
