@@ -1,17 +1,17 @@
 import { Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Nav from "./components/Nav";
+// import Header from "./components/Header";
+// import Nav from "./components/Nav";
 import Profile from "./pages/profile";
-// import Home from "./pages/home";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="bg-white text-black overflow-x-hidden">
       <div>
-        <Header />
+        {/* <Header /> */}
         {/* <Nav /> */}
         <Routes>
-          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
       </div>
