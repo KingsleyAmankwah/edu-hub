@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import googleLogo from "../assets/gogle.png";
+// import googleLogo from "../assets/gogle.png";
 import Spinner from "./Spinner";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import OAuth from "./OAuth";
 
 function Login({ closeModal }) {
   const navigate = useNavigate();
@@ -110,7 +111,7 @@ function Login({ closeModal }) {
           </div>
 
           <div className=" w-8/12 lg:w-4/12 mb-5">
-            <button
+            {/* <button
               // onClick={googleSignIn}
               className="flex justify-center items-center bg-white border border-[#0000004d] text-black rounded-xl py-2 w-full "
             >
@@ -123,7 +124,8 @@ function Login({ closeModal }) {
                 />{" "}
               </span>{" "}
               <p className="font-bold"> Continue with Google</p>
-            </button>
+            </button> */}
+            <OAuth />
           </div>
         </form>
       </div>
