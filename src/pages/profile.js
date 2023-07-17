@@ -4,7 +4,7 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 import { doc, updateDoc } from "firebase/firestore";
 import { db } from "../firebase-config";
-import Spinner from "../components/Spinner";
+// import Spinner from "../components/Spinner";
 
 function Profile() {
   const auth = getAuth();
@@ -45,7 +45,7 @@ function Profile() {
     }
   };
 
-  const [loading, setLoading] = useState(true);
+  //   const [loading, setLoading] = useState(true);
 
   //   useEffect(() => {
   //     const fetchUserListings = async () => {
@@ -75,7 +75,7 @@ function Profile() {
   //     fetchUserListings();
   //   }, [auth.currentUser.uid]);
 
-  if (loading) return <Spinner />;
+  //   if (loading) return <Spinner />;
 
   return (
     <div className="font-[system-ui] p-[1rem] sm:p-[2rem]  mb-[10rem]">
