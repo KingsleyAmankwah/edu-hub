@@ -33,7 +33,7 @@ function Login({ closeModal }) {
         // Signed in
         const user = userCredential.user;
         toast.success(`${user.displayName}, Welcome Back!`);
-        navigate("/");
+        navigate("/dashboard");
         setLoading(false);
       })
       .catch((error) => {
