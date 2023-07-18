@@ -25,8 +25,8 @@ function OAuth() {
   };
 
   return (
-    <div onClick={onGoogleClick}>
-      <p className="cursor-pointer my-5 px-7 py-3 text-black font-medium text-sm leading-snug uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full flex justify-center items-center">
+    <div onClick={onGoogleClick} className="w-full">
+      <p className="cursor-pointer my-5 px-7 py-3 text-black text-sm leading-snug uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full flex justify-center items-center">
         <img src={googleLogo} alt="Logo" className="w-4 h-4 mr-4" srcSet="" />
         Continue with Google
       </p>
