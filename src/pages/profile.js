@@ -23,10 +23,10 @@ function Profile() {
     }));
   };
 
-  const onLogout = () => {
-    auth.signOut();
-    navigate("/");
-  };
+  // const onLogout = () => {
+  //   auth.signOut();
+  //   navigate("/");
+  // };
 
   const onSubmit = async () => {
     try {
@@ -45,48 +45,16 @@ function Profile() {
     }
   };
 
-  //   const [loading, setLoading] = useState(true);
-
-  //   useEffect(() => {
-  //     const fetchUserListings = async () => {
-  //       const listingsRef = collection(db, "listings");
-
-  //       const q = query(
-  //         listingsRef,
-  //         where("userRef", "==", auth.currentUser.uid),
-  //         orderBy("timestamp", "desc")
-  //       );
-
-  //       const querySnap = await getDocs(q);
-
-  //       let listings = [];
-
-  //       querySnap.forEach((doc) => {
-  //         return listings.push({
-  //           id: doc.id,
-  //           data: doc.data(),
-  //         });
-  //       });
-
-  //       setListings(listings);
-  //       setLoading(false);
-  //     };
-
-  //     fetchUserListings();
-  //   }, [auth.currentUser.uid]);
-
-  //   if (loading) return <Spinner />;
-
   return (
     <div className="font-[system-ui] p-[1rem] sm:p-[2rem]  mb-[10rem]">
       <header className="flex justify-between items-center">
         <p className="sm:text-3xl lg:text-5xl font-bold">My Profile</p>
         <button
           type="button"
-          className="cursor-pointer bg-[#00cc66] py-[0.25rem] px-[0.75rem] text-white font-[500] rounded-lg"
-          onClick={onLogout}
+          className="cursor-pointer bg-[#f50057] py-[0.25rem] px-[0.75rem] text-white font-[500] rounded-lg"
+          // onClick={onLogout}
         >
-          Logout
+          Go Back
         </button>
       </header>
 
