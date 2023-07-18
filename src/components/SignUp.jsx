@@ -59,7 +59,7 @@ function SignUp({ closeModal }) {
 
         setLoading(false);
         toast.success(`${user.email} registered succesfully!`);
-        navigate("/");
+        navigate("/dashboard");
       })
       .catch((error) => {
         const errorMessage = error.message;
