@@ -81,7 +81,7 @@ function SignUp({ closeModal }) {
          flex flex-col  justify-center h-[70%] bg-white  z-50 rounded-2xl"
       >
         <div
-          className="absolute right-[10px] top-[10px] bg-[#f50057] cursor-pointer text-white text-xl py-1 px-4 rounded-lg"
+          className="absolute right-[10px] top-[10px] bg-[#f50057] cursor-pointer text-white text-xs md:text-xl py-1 px-4 rounded-lg"
           onClick={() => closeModal(false)}
         >
           X
@@ -142,25 +142,11 @@ function SignUp({ closeModal }) {
             </button>
           </div>
 
-          <div className="my-4">
+          <div className="my-2">
             <h1 className="font-bold ">OR</h1>
           </div>
 
-          <div className=" w-8/12 lg:w-4/12 mb-5">
-            {/* <button
-              // onClick={googleSignIn}
-              className="flex justify-center items-center bg-white border border-[#0000004d] text-black rounded-xl py-2 w-full "
-            >
-              <span>
-                {" "}
-                <img
-                  src={googleLogo}
-                  className="h-5 w-5 rounded-full mr-5"
-                  alt="google_logo"
-                />{" "}
-              </span>{" "}
-              <p className="font-bold"> Continue with Google</p>
-            </button> */}
+          <div className=" w-full md:w-8/12 lg:w-4/12">
             <OAuth />
           </div>
         </form>
