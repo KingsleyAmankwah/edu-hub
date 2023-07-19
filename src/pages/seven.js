@@ -1,7 +1,5 @@
-import React from "react";
-
-function seven() {
+function Seven() {
   return <div>seven</div>;
 }
 
-export default seven;
+export default Seven;
