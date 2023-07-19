@@ -20,7 +20,7 @@ function Dashboard() {
   return (
     <div className="w-full h-full">
       <Nav />
-      <div className="h-[100vh] w-full">
+      <div className="h-full w-full">
         <div className="flex flex-col md:flex-row w-full justify-around mt-8">
           <div>
             <h1 className="font-bold text-lg md:text-3xl pb-4">
