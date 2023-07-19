@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { FaUserLock } from "react-icons/fa";
-import { FiSettings } from "react-icons/fi";
+// import { FiSettings } from "react-icons/fi";
 import { BiLogOutCircle } from "react-icons/bi";
 import { getAuth } from "firebase/auth";
 
@@ -17,9 +17,9 @@ const Nav = () => {
       </div>
 
       <div className="flex justify-around items-center w-[50%] text-sm">
-        <Link to="/add-group">Basic 7</Link>
-        <Link to="/add-group">Basic 8</Link>
-        <Link to="/add-group">Basic 9</Link>
+        <Link to="/seven">Basic 7</Link>
+        <Link to="/eight">Basic 8</Link>
+        <Link to="/nine">Basic 9</Link>
       </div>
       <div>
         <UserProfile />
@@ -45,8 +45,6 @@ const UserProfile = () => {
   };
 
   useEffect(() => {
-    // Example: Fetch user details from authentication provider
-    // Replace with your own logic to fetch the user details
     const user = auth.currentUser;
     setUser(user);
   }, [auth.currentUser]);
@@ -93,14 +91,14 @@ const UserProfile = () => {
               </div>
             </Link>
 
-            <div>
+            {/* <div>
               <Link to="/settings">
                 <div className="flex items-center gap-2 text-active cursor-pointer hover:bg-active-bg p-2">
                   <FiSettings className="text-lg" />
                   <p>Settings</p>
                 </div>
               </Link>
-            </div>
+            </div> */}
 
             <div
               onClick={onLogout}
