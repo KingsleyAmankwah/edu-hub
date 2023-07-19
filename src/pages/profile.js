@@ -1,14 +1,13 @@
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { getAuth, updateProfile } from "firebase/auth";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { doc, updateDoc } from "firebase/firestore";
 import { db } from "../firebase-config";
-// import Spinner from "../components/Spinner";
 
 function Profile() {
   const auth = getAuth();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [changeDetails, setChangeDetails] = useState(false);
   const [formData, setFormData] = useState({
     name: auth.currentUser.displayName,
@@ -23,11 +22,6 @@ function Profile() {
     }));
   };
 
-  // const onLogout = () => {
-  //   auth.signOut();
-  //   navigate("/");
-  // };
-
   const onSubmit = async () => {
     try {
       if (auth.currentUser.displayName !== name) {
@@ -35,11 +29,12 @@ function Profile() {
           displayName: name,
         });
       }
-      //Update in firestore
+      // Update in Firestore
       const userRef = doc(db, "users", auth.currentUser.uid);
       await updateDoc(userRef, {
         name,
       });
+      toast.success("Profile updated successfully");
     } catch (error) {
       toast.error("Could not update profile");
     }
@@ -49,27 +44,27 @@ function Profile() {
     <div className="font-[system-ui] p-[1rem] sm:p-[2rem]  mb-[10rem]">
       <header className="flex justify-between items-center">
         <p className="sm:text-3xl lg:text-5xl font-bold">My Profile</p>
-        <button
-          type="button"
+        <Link
+          to="/dashboard"
           className="cursor-pointer bg-[#f50057] py-[0.25rem] px-[0.75rem] text-white font-[500] rounded-lg"
-          // onClick={onLogout}
         >
           Go Back
-        </button>
+        </Link>
       </header>
 
       <main>
         <div className="mt-4 sm:mt-8 flex justify-between max-w-[500px]">
           <p className="font-[600]">Personal Details</p>
           <p
-            className="font-[600] text-[#00cc66] cursor-pointer"
+            className="font-[600] text-[#f50057] cursor-pointer"
             onClick={() => {
-              changeDetails && onSubmit();
+              if (changeDetails) {
+                onSubmit();
+              }
               setChangeDetails((prevState) => !prevState);
             }}
           >
-            {" "}
-            {changeDetails ? "Update" : "Edit"}{" "}
+            {changeDetails ? "Update" : "Edit"}
           </p>
         </div>
 
