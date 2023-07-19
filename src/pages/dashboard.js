@@ -30,23 +30,24 @@ function Dashboard() {
             <Calendar value={currentDate} onChange={handleDateChange} />
           </div>
 
-          <div>
-            <span className="text-primary font-bold">Join Class</span>
-            <div className="bg-[#f6f7f8] mt-4 rounded-lg p-8">
-              <Link to="/groups" className="text-center underline w-full">
+          <div className="mt-8 md:mt-0">
+            <h2 className="text- font-bold">Join Class</h2>
+
+            <Link to="/seven" className="text-center ">
+              <div className="w-full text-[#f50057] bg-[#f6f7f8] mt-4 rounded-lg p-8">
                 Basic 7
-              </Link>
-            </div>
-            <div className="w-full bg-[#f6f7f8] mt-4 rounded-lg p-8">
-              <Link to="/groups" className="text-center underline">
+              </div>
+            </Link>
+            <Link to="/eight" className="text-center">
+              <div className="w-full text-[#f50057] bg-[#f6f7f8] mt-4 rounded-lg p-8">
                 Basic 8
-              </Link>
-            </div>
-            <div className="w-full bg-[#f6f7f8] mt-4 rounded-lg p-8">
-              <Link to="/groups" className="text-center underline">
+              </div>
+            </Link>
+            <Link to="/nine" className="text-center">
+              <div className="w-full text-[#f50057] bg-[#f6f7f8] mt-4 rounded-lg p-8">
                 Basic 9
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
