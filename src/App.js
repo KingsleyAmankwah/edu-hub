@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 // import Nav from "./components/Nav";
 import Profile from "./pages/profile";
 import Home from "./pages/Home";
-import Dashboard from "./pages/dashboard";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
