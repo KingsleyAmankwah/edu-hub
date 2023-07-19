@@ -6,6 +6,9 @@ import "react-toastify/dist/ReactToastify.css";
 import Profile from "./pages/profile";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
+import Seven from "./pages/seven";
+import Eight from "./pages/Eight";
+import Nine from "./pages/Nine";
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/seven" element={<Seven />} />
+          <Route path="/eight" element={<Eight />} />
+          <Route path="/nine" element={<Nine />} />
         </Routes>
       </div>
 
