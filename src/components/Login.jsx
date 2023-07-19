@@ -110,21 +110,7 @@ function Login({ closeModal }) {
             <h1 className="font-bold ">OR</h1>
           </div>
 
-          <div className=" w-8/12 lg:w-4/12 mb-5">
-            {/* <button
-              // onClick={googleSignIn}
-              className="flex justify-center items-center bg-white border border-[#0000004d] text-black rounded-xl py-2 w-full "
-            >
-              <span>
-                {" "}
-                <img
-                  src={googleLogo}
-                  className="h-5 w-5 rounded-full mr-5"
-                  alt="google_logo"
-                />{" "}
-              </span>{" "}
-              <p className="font-bold"> Continue with Google</p>
-            </button> */}
+          <div className=" w-full md:w-8/12 lg:w-4/12 mb-5">
             <OAuth />
           </div>
         </form>
