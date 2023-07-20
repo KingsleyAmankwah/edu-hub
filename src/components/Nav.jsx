@@ -91,15 +91,6 @@ const UserProfile = () => {
               </div>
             </Link>
 
-            {/* <div>
-              <Link to="/settings">
-                <div className="flex items-center gap-2 text-active cursor-pointer hover:bg-active-bg p-2">
-                  <FiSettings className="text-lg" />
-                  <p>Settings</p>
-                </div>
-              </Link>
-            </div> */}
-
             <div
               onClick={onLogout}
               className="flex items-center gap-2 text-active cursor-pointer hover:bg-active-bg p-2"
