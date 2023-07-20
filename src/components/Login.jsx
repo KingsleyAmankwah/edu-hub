@@ -89,14 +89,14 @@ function Login({ closeModal }) {
             onChange={handleInputChange}
           />
 
-          <div className="flex justify-start text-left my-4">
+          {/* <div className="flex justify-start text-left my-4">
             <Link
               to="forget-password"
               className="text-sm font-bold text-left underline text-[#e60023]"
             >
-              Forgot your Password?
+              Forgot Password?
             </Link>
-          </div>
+          </div> */}
 
           <div className="flex justify-center w-8/12 lg:w-4/12">
             <button
