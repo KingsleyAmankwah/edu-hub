@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Profile from "./pages/profile";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
-import Seven from "./pages/seven";
+import Seven from "./pages/Seven";
 import Eight from "./pages/Eight";
 import Nine from "./pages/Nine";
 
