@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Spinner from "./Spinner";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { toast } from "react-toastify";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import OAuth from "./OAuth";
 
 function Login({ closeModal }) {
@@ -89,11 +89,14 @@ function Login({ closeModal }) {
             onChange={handleInputChange}
           />
 
-          {/* <div className="flex justify-start text-left mb-1">
-            <p className="text-black text-sm font-bold text-left">
+          <div className="flex justify-start text-left my-4">
+            <Link
+              to="forget-password"
+              className="text-sm font-bold text-left underline text-[#e60023]"
+            >
               Forgot your Password?
-            </p>
-          </div> */}
+            </Link>
+          </div>
 
           <div className="flex justify-center w-8/12 lg:w-4/12">
             <button
