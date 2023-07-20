@@ -12,12 +12,13 @@ function Home() {
         <div className="flex flex-col justify-around w-full items-center lg:flex-row pt-[100px]">
           <div className="flex flex-col  w-full lg:w-1/2 space-y-6 lg:ml-12 ml-4 mb-6 sm:mb-0">
             <h1 className="text-3xl sm:text-5xl font-bold ">
-              The people platform—Where interests become friendships
+              The Education Hub—Where Knowledge Grows and Friendships Flourish
             </h1>
             <p className="py-2">
-              Whatever your interest, from hiking and reading to networking and
-              skill sharing, there are thousands of people who share it on
-              Meetup. Events are happening every day—sign up to join the fun.
+              Whatever your academic interest, from mathematics and science to
+              literature and arts, there are thousands of learners like you on
+              EduHub. Courses are available every day—sign up to embark on your
+              learning journey
             </p>
 
             <div>
@@ -25,7 +26,7 @@ function Home() {
                 className="rounded-[8px] py-2 bg-[#f50057] text-white px-4 inline-block  hover:no-underline"
                 onClick={() => setSignUpModal(true)}
               >
-                Join EduHub
+                Join EduHub Now
               </button>
             </div>
           </div>
@@ -41,8 +42,8 @@ function Home() {
             </h2>
 
             <p className="text-left sm:text-center w-full sm:w-2/3 lg:w-1/2 mb-10 mx-auto">
-              Meet new people who share your interests through online and
-              in-person events. It’s free to create an account.
+              Explore courses and topics which aligns with your interests
+              online.
             </p>
 
             <div className="flex flex-col lg:flex-row sm:space-y-0">
@@ -65,8 +66,8 @@ function Home() {
                     </h3>
                   </a>
                   <p className="text-sm text-center font-normal text-gray7">
-                    Events are happening on just about any topic you can think
-                    of, from online gaming and photography to yoga and hiking.
+                    It’s free to create an account. SignUp now to embark on your
+                    learning journey
                   </p>
                 </div>
               </div>
@@ -87,8 +88,7 @@ function Home() {
                     <h3 className="font-semibold text-xl mb-3">Select class</h3>
                   </a>
                   <p className="text-sm text-center font-normal text-gray7">
-                    Do what you love, meet others who love it, find your
-                    community. The rest is history!
+                    Pick a class you want to join
                   </p>
                 </div>
               </div>
@@ -111,8 +111,8 @@ function Home() {
                     </h3>
                   </a>
                   <p className="text-sm text-center font-normal text-gray7">
-                    You don’t have to be an expert to gather people together and
-                    explore shared interests.
+                    At the comfort of your home, you can learn at your own
+                    pace...
                   </p>
                 </div>
               </div>
