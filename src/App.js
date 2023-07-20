@@ -9,6 +9,7 @@ import Dashboard from "./pages/Dashboard";
 import Seven from "./pages/Seven";
 import Eight from "./pages/Eight";
 import Nine from "./pages/Nine";
+import ForgotPassword from "./pages/ForgotPassword";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/seven" element={<Seven />} />
           <Route path="/eight" element={<Eight />} />
           <Route path="/nine" element={<Nine />} />
+          <Route path="/forget-password" element={<ForgotPassword />} />
         </Routes>
       </div>
 
