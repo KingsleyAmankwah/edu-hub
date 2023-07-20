@@ -138,7 +138,7 @@ function SignUp({ closeModal }) {
               className="bg-[#e60023] text-white rounded-xl py-2 w-full font-bold 
                 disabled:cursor-not-allowed disabled:opacity-60"
             >
-              SignUp
+              Get started
             </button>
           </div>
 
