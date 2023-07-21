@@ -9,7 +9,7 @@ function ForgotPassword() {
   const [resetMessage, setResetMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [resetMessageBgColor, setResetMessageBgColor] = useState("bg-red-200");
-  //   let resetMessageBgColor = "bg-red-200";
+
   const handleResetPassword = async (e) => {
     e.preventDefault();
     setIsLoading(true);
