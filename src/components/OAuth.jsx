@@ -20,7 +20,8 @@ function OAuth() {
       })
       .catch((error) => {
         const errorMessage = error.message;
-        toast.error(errorMessage);
+        // toast.error(errorMessage);
+        console.log(errorMessage);
       });
   };
 
