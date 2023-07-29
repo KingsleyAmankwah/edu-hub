@@ -19,12 +19,12 @@ function App() {
         {/* <Nav /> */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          {/* <Route path="/profile" element={<Profile />} /> */}
+          {/* <Route path="/dashboard" element={<Dashboard />} /> */}
           <Route path="/seven" element={<Seven />} />
           <Route path="/eight" element={<Eight />} />
           <Route path="/nine" element={<Nine />} />
-          <Route path="/forget-password" element={<ForgotPassword />} />
+          {/* <Route path="/forget-password" element={<ForgotPassword />} /> */}
         </Routes>
       </div>
 
