@@ -39,9 +39,10 @@ function Seven() {
             <>
               <h4 className="font-bold">Lesson 1: Output Devices</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                ab porro ratione exercitationem dolorum, odit necessitatibus
-                assumenda officia, dolor voluptatem quam suscipit rerum
+                Welcome to our lesson on output devices! Explore the fascinating
+                world of output devices. Start lesson and embark on a
+                captivating learning journey that will leave you with a newfound
+                appreciation for the wonders of ICT!
               </p>
               <Link
                 target="_blank"
@@ -55,9 +56,11 @@ function Seven() {
                 Lesson 2: FULL-SIZED EXTERNAL HARD DISK DRIVE
               </h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                ab porro ratione exercitationem dolorum, odit necessitatibus
-                assumenda officia, dolor voluptatem quam suscipit rerum
+                Welcome to our lesson on full sized external hard disk drive!
+                Explore the fascinating world of full sized external hard disk
+                drive. Start lesson and embark on a captivating learning journey
+                that will leave you with a newfound appreciation for the wonders
+                of ICT!
               </p>
               <Link
                 target="_blank"
