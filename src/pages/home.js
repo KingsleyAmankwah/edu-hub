@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+
 import backgroundImg from "../assets/b1.png";
-import SignUp from "../components/SignUp";
-import Header from "../components/Header";
+// import SignUp from "../components/SignUp";
+// import Header from "../components/Header";
 function Home() {
-  const [signUpModal, setSignUpModal] = useState(false);
+  // const [signUpModal, setSignUpModal] = useState(false);
 
   return (
     <>
@@ -24,7 +24,7 @@ function Home() {
             <div>
               <button
                 className="rounded-[8px] py-2 bg-[#f50057] text-white px-4 inline-block  hover:no-underline"
-                onClick={() => setSignUpModal(true)}
+                // onClick={() => setSignUpModal(true)}
               >
                 Join EduHub Now
               </button>
@@ -34,7 +34,7 @@ function Home() {
             <img src={backgroundImg} alt="" />
           </div>
         </div>
-        {signUpModal && <SignUp closeModal={setSignUpModal} />}
+        {/* {signUpModal && <SignUp closeModal={setSignUpModal} />} */}
         <div className=" w-full pl-4 sm:px-4 xl:px-0">
           <div className="text-center relative z-10 py-20">
             <h2 className="text-left sm:text-center text-2xl sm:text-3xl font-bold mb-2">
