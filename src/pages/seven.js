@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { BiTimeFive, BiBook } from "react-icons/bi";
+// import { BiTimeFive, BiBook } from "react-icons/bi";
 import React, { useState } from "react"; // Import useState hook
 
 function Seven() {
