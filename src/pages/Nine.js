@@ -7,7 +7,7 @@ function Nine() {
       <header className="flex justify-between items-center">
         <p className="sm:text-3xl lg:text-5xl font-bold">Basic 9</p>
         <Link
-          to="/dashboard"
+          to="/"
           className="cursor-pointer bg-[#f50057] py-[0.25rem] px-[0.75rem] text-white font-[500] rounded-lg"
         >
           Go Back
