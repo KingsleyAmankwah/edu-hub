@@ -1,14 +1,13 @@
-
 import backgroundImg from "../assets/b1.png";
 // import SignUp from "../components/SignUp";
-// import Header from "../components/Header";
+import Header from "../components/Header";
 function Home() {
   // const [signUpModal, setSignUpModal] = useState(false);
 
   return (
     <>
       <div className="bg-center bg-cover bg-no-repeat bg-[url('./assets/banner.png')] h-full w-full">
-        {/* <Header /> */}
+        <Header />
         <div className="flex flex-col justify-around w-full items-center lg:flex-row pt-[100px]">
           <div className="flex flex-col  w-full lg:w-1/2 space-y-6 lg:ml-12 ml-4 mb-6 sm:mb-0">
             <h1 className="text-3xl sm:text-5xl font-bold ">
