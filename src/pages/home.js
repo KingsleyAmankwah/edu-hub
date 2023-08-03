@@ -1,13 +1,59 @@
 import backgroundImg from "../assets/b1.png";
 // import SignUp from "../components/SignUp";
 import Header from "../components/Header";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 function Home() {
   // const [signUpModal, setSignUpModal] = useState(false);
 
+  const slides = [
+    {
+      imgSrc:
+        "https://ghana.un.org/sites/default/files/styles/hero_header_2xl_1x/public/2021-01/20210126_093917.jpg?itok=UGNACrqY",
+      title: "Slider Image 1",
+      description: "Description for Slider Image 2",
+    },
+    {
+      imgSrc:
+        "https://pencilsofpromise.org/wp-content/uploads/2022/01/ghana_reading2.jpg",
+      title: "Slider Image 2",
+      description: "Description for Slider Image 2",
+    },
+    {
+      imgSrc:
+        "https://www.brookings.edu/wp-content/uploads/2020/07/shutterstock_592676366_small.jpg",
+      title: "Slider Image 3",
+      description: "Description for Slider Image 2",
+    },
+    {
+      imgSrc:
+        "https://images.squarespace-cdn.com/content/v1/5a15b89490bade62214d8e02/1532378762841-6VS9ZH1RT3FOZX15MR0I/Ghana+Girl+Students1IMG_5804.jpg",
+      title: "Slider Image 3",
+      description: "Description for Slider Image 3",
+    },
+  ];
+
   return (
     <>
-      <div className="bg-center bg-cover bg-no-repeat bg-[url('./assets/banner.png')] h-full w-full">
+      <div className="bg-center bg-cover bg-no-repeat bg-[url('./assets/banner.png')]">
         <Header />
+
+        {/* The Carousel */}
+        <div className="w-full h-[50%]">
+          <Carousel autoPlay showThumbs={false} infiniteLoop>
+            {slides.map((slide, index) => (
+              <div key={index}>
+                <img src={slide.imgSrc} alt={slide.title} />
+                <div className="legend">
+                  <h3>{slide.title}</h3>
+                  <p>{slide.description}</p>
+                </div>
+              </div>
+            ))}
+          </Carousel>
+        </div>
+
         <div className="flex flex-col justify-around w-full items-center lg:flex-row pt-[100px]">
           <div className="flex flex-col  w-full lg:w-1/2 space-y-6 lg:ml-12 ml-4 mb-6 sm:mb-0">
             <h1 className="text-3xl sm:text-5xl font-bold ">
