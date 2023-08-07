@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 // import { BiBook, BiTimeFive } from "react-icons/bi";
+import backgroundImg from "../assets/7.jpg";
 
 function Seven() {
   const [strandData, setStrandData] = useState([
@@ -290,6 +291,15 @@ function Seven() {
           Go Back
         </Link>
       </header>
+
+      <div
+        className="w-full h-full"
+        style={{
+          backgroundImage: `url(${backgroundImg})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      ></div>
 
       <main className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[1rem] mt-4">
         {strandData.map((strand, strandIndex) => (
