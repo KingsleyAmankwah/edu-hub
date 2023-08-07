@@ -1,8 +1,11 @@
-import backgroundImg from "../assets/b1.png";
+import { Link } from "react-router-dom";
+import backgroundImg from "../assets/7.jpg";
+// import slideImg from "../assets/1.jpg";
 // import SignUp from "../components/SignUp";
 import Header from "../components/Header";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Nav from "../components/Nav";
 
 function Home() {
   // const [signUpModal, setSignUpModal] = useState(false);
@@ -26,36 +29,30 @@ function Home() {
       title: "Slider Image 3",
       description: "Description for Slider Image 2",
     },
-    {
-      imgSrc:
-        "https://images.squarespace-cdn.com/content/v1/5a15b89490bade62214d8e02/1532378762841-6VS9ZH1RT3FOZX15MR0I/Ghana+Girl+Students1IMG_5804.jpg",
-      title: "Slider Image 3",
-      description: "Description for Slider Image 3",
-    },
+    // {
+    //   imgSrc: { slideImg },
+    //   title: "SImage",
+    //   description: "Description for Slider Image",
+    // },
   ];
 
   return (
     <>
       <div className="bg-center bg-cover bg-no-repeat bg-[url('./assets/banner.png')]">
-        <Header />
+        {/* <Header /> */}
+        <Nav />
 
         {/* The Carousel */}
-        <div className="w-full h-[50%]">
-          <Carousel autoPlay showThumbs={false} infiniteLoop>
-            {slides.map((slide, index) => (
-              <div key={index}>
-                <img src={slide.imgSrc} alt={slide.title} />
-                <div className="legend">
-                  <h3>{slide.title}</h3>
-                  <p>{slide.description}</p>
-                </div>
-              </div>
-            ))}
-          </Carousel>
-        </div>
 
-        <div className="flex flex-col justify-around w-full items-center lg:flex-row pt-[100px]">
-          <div className="flex flex-col  w-full lg:w-1/2 space-y-6 lg:ml-12 ml-4 mb-6 sm:mb-0">
+        <div
+          className="flex flex-col w-full h-[100vh] items-center lg:flex-row pt-[100px]"
+          style={{
+            backgroundImage: `url(${backgroundImg})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}
+        >
+          <div className="flex flex-col text-white  w-full lg:w-1/2 space-y-6 ml-2 sm:mb-0">
             <h1 className="text-3xl sm:text-5xl font-bold ">
               The Education Hub—Where Knowledge Grows and Friendships Flourish
             </h1>
@@ -67,19 +64,32 @@ function Home() {
             </p>
 
             <div>
-              <button
-                className="rounded-[8px] py-2 bg-[#f50057] text-white px-4 inline-block  hover:no-underline"
-                // onClick={() => setSignUpModal(true)}
-              >
-                Join EduHub Now
-              </button>
+              <Link to="/classes">
+                <button className="rounded-[8px] py-2 bg-[#f50057] text-white px-4 inline-block  hover:no-underline">
+                  Join EduHub Now
+                </button>
+              </Link>
             </div>
           </div>
-          <div className="w-5/6 lg:w-[27%] mb-6 lg:mb-0">
+          {/* <div className="w-5/6 lg:w-[27%] mb-6 lg:mb-0">
             <img src={backgroundImg} alt="" />
-          </div>
+          </div> */}
         </div>
-        {/* {signUpModal && <SignUp closeModal={setSignUpModal} />} */}
+
+        {/* <div className="w-full h-[50%]">
+          <Carousel autoPlay showThumbs={false} infiniteLoop>
+            {slides.map((slide, index) => (
+              <div key={index}>
+                <img src={slide.imgSrc} alt={slide.title} />
+                <div className="legend">
+                  <h3>{slide.title}</h3>
+                  <p>{slide.description}</p>
+                </div>
+              </div>
+            ))}
+          </Carousel>
+        </div> */}
+
         <div className=" w-full pl-4 sm:px-4 xl:px-0">
           <div className="text-center relative z-10 py-20">
             <h2 className="text-left sm:text-center text-2xl sm:text-3xl font-bold mb-2">
