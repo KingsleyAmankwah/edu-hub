@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import backgroundImg from "../assets/7.jpg";
+import aboutImg from "../assets/3.jpg";
 // import slideImg from "../assets/1.jpg";
 // import SignUp from "../components/SignUp";
 import Header from "../components/Header";
@@ -29,16 +30,11 @@ function Home() {
       title: "Slider Image 3",
       description: "Description for Slider Image 2",
     },
-    // {
-    //   imgSrc: { slideImg },
-    //   title: "SImage",
-    //   description: "Description for Slider Image",
-    // },
   ];
 
   return (
     <>
-      <div className="bg-center bg-cover bg-no-repeat bg-[url('./assets/banner.png')]">
+      <div className="w-full h-full">
         {/* <Header /> */}
         <Nav />
 
@@ -52,7 +48,7 @@ function Home() {
             backgroundSize: "cover",
           }}
         >
-          <div className="flex flex-col text-white  w-full lg:w-1/2 space-y-6 ml-2 sm:mb-0">
+          <div className="flex flex-col text-white w-full lg:w-1/2 space-y-6 ml-8 sm:mb-0">
             <h1 className="text-3xl sm:text-5xl font-bold ">
               The Education Hub—Where Knowledge Grows and Friendships Flourish
             </h1>
@@ -96,7 +92,7 @@ function Home() {
               How <span className="text-primary">EduHub</span> works
             </h2>
 
-            <p className="text-left sm:text-center w-full sm:w-2/3 lg:w-1/2 mb-10 mx-auto">
+            <p className="text-left sm:text-center w-full sm:w-2/3 lg:w-1/2 mb-10 mx-auto text-[#f50057]">
               Explore courses and topics which aligns with your interests
               online.
             </p>
@@ -116,7 +112,7 @@ function Home() {
                     href="https://www.meetup.com/find/?source=GROUPS"
                     className="text-viridian"
                   >
-                    <h3 className="font-semibold text-xl mb-3">
+                    <h3 className="font-semibold text-xl mb-3 text-[#f50057]">
                       Create an account
                     </h3>
                   </a>
@@ -140,7 +136,9 @@ function Home() {
                     href="https://www.meetup.com/find/?source=GROUPS"
                     className="text-viridian"
                   >
-                    <h3 className="font-semibold text-xl mb-3">Select class</h3>
+                    <h3 className="font-semibold text-xl mb-3 text-[#f50057]">
+                      Select class
+                    </h3>
                   </a>
                   <p className="text-sm text-center font-normal text-gray7">
                     Pick a class you want to join
@@ -161,7 +159,7 @@ function Home() {
                     href="https://www.meetup.com/find/?source=GROUPS"
                     className="text-viridian"
                   >
-                    <h3 className="font-semibold text-xl mb-3">
+                    <h3 className="font-semibold text-xl mb-3 text-[#f50057]">
                       Start learning
                     </h3>
                   </a>
@@ -173,6 +171,30 @@ function Home() {
               </div>
             </div>
           </div>
+        </div>
+
+        <h2 className="text-left sm:text-center text-2xl sm:text-3xl font-bold mb-2">
+          About <span className="text-[#f50057]">Edu</span>Hub
+        </h2>
+        <div id="about" className="grid grid-cols-2 gap-4">
+          <div className="w-full h-full">
+            <img src={aboutImg} alt="" className="" />
+          </div>
+          <div>
+            <p className="text-2xl ">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Molestiae est ipsa quo modi perspiciatis, possimus corporis
+              praesentium, aspernatur eveniet assumenda optio, cumque soluta
+              dicta. Dolorem, perferendis! Laboriosam inventore ut numquam.
+            </p>
+          </div>
+        </div>
+        <h2 className="text-left sm:text-center text-2xl sm:text-3xl font-bold mb-2">
+          Contact <span className="text-[#f50057]">Us</span>
+        </h2>
+        <div id="about" className="grid grid-cols-2 gap-4">
+          <div className="w-full h-full"></div>
+          <div></div>
         </div>
       </div>
     </>
