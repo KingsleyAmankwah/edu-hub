@@ -32,11 +32,11 @@ function Classes() {
             learning journey.
           </p>
 
-          <Link to="/">
+          {/* <Link to="/">
             <button className="rounded-lg py-2 px-6 bg-[#f50057] text-white hover:bg-opacity-90 transition duration-300">
               Go Back
             </button>
-          </Link>
+          </Link> */}
         </div>
       </div>
 
