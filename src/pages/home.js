@@ -37,7 +37,7 @@ function Home() {
 
             <Link to="/classes">
               <button className="rounded-lg py-2 px-6 bg-[#f50057] text-white hover:bg-opacity-90 transition duration-300">
-                Get Started
+                Get Started Now
               </button>
             </Link>
           </div>
