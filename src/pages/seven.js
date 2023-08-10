@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 // import { BiBook, BiTimeFive } from "react-icons/bi";
-import backgroundImg from "../assets/7.jpg";
+import backgroundImg from "../assets/4.jpg";
 
 function Seven() {
   const [strandData, setStrandData] = useState([
@@ -272,40 +272,51 @@ function Seven() {
     setStrandData(updatedStrands);
   };
 
-  // Define a function to toggle the visibility of sub-strands for a specific sub-strand
   const toggleSubStrand = (strandIndex, subStrandIndex) => {
     const updatedStrands = [...strandData];
-    updatedStrands[strandIndex].subStrands[subStrandIndex].showSubStrands =
-      !updatedStrands[strandIndex].subStrands[subStrandIndex].showSubStrands;
+    const subStrands = updatedStrands[strandIndex].subStrands;
+
+    // Close previously open sub-strands
+    subStrands.forEach((subStrand, index) => {
+      if (index !== subStrandIndex) {
+        subStrand.showSubStrands = false;
+      }
+    });
+
+    // Toggle the visibility of the selected sub-strand
+    subStrands[subStrandIndex].showSubStrands =
+      !subStrands[subStrandIndex].showSubStrands;
+
     setStrandData(updatedStrands);
   };
 
   return (
-    <div className="font-[system-ui] p-[1rem] sm:p-[2rem] mb-[10rem]">
+    <div
+      className="font-[system-ui] p-[1rem] sm:p-[2rem] mb-[10rem] w-full h-screen"
+      style={{
+        backgroundImage: `url(${backgroundImg})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
       <header className="flex justify-between items-center">
-        <p className="sm:text-3xl lg:text-5xl font-bold">Basic 7</p>
+        <p className="sm:text-3xl lg:text-5xl font-bold text-white">Basic 7</p>
         <Link
-          to="/"
+          to="/classes"
           className="cursor-pointer bg-[#f50057] py-[0.25rem] px-[0.75rem] text-white font-[500] rounded-lg"
         >
           Go Back
         </Link>
       </header>
 
-      <div
-        className="w-full h-full"
-        style={{
-          backgroundImage: `url(${backgroundImg})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-        }}
-      ></div>
-
       <main className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[1rem] mt-4">
         {strandData.map((strand, strandIndex) => (
           <div
             key={strandIndex}
-            className="flex flex-col border border-gray-300 p-4 rounded-lg shadow-md bg-white"
+            className="flex flex-col p-4 rounded-lg shadow-lg"
+            style={{
+              backgroundColor: strand.showSubStrands ? "#fff" : "initial",
+            }}
           >
             <h1
               className="text-xl font-bold mb-2 text-[#f50057] cursor-pointer"
@@ -348,17 +359,6 @@ function Seven() {
                 ))}
               </>
             )}
-
-            {/* <footer className="flex items-center mt-4">
-              <div className="flex items-center gap-2">
-                <BiTimeFive className="h-6 w-6 text-[#f50057]" />
-                <p className="text-gray-600">Duration: 30mins</p>
-              </div>
-              <div className="flex items-center gap-2 ml-4">
-                <BiBook className="h-6 w-6 text-[#f50057]" />
-                <p className="text-gray-600">Lesson: 20</p>
-              </div>
-            </footer> */}
           </div>
         ))}
       </main>
