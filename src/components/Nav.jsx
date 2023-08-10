@@ -17,7 +17,7 @@ const Nav = () => {
           About Us
         </a>
         <a href="#contact" className="hover:text-[#f50057]">
-          Contact
+          Contact Us
         </a>
       </div>
       <div></div>
