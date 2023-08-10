@@ -10,6 +10,9 @@ const Header = () => {
       </div>
 
       <div className="flex justify-around items-center w-[50%] text-sm">
+        <Link to="/" className="hover:text-[#f50057]">
+          Home
+        </Link>
         <Link to="/seven" className="hover:text-[#f50057]">
           Basic 7
         </Link>
