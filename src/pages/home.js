@@ -1,95 +1,52 @@
 import { Link } from "react-router-dom";
 import backgroundImg from "../assets/7.jpg";
 import aboutImg from "../assets/3.jpg";
-// import slideImg from "../assets/1.jpg";
+import contactImage from "../assets/1.jpg";
 // import SignUp from "../components/SignUp";
-import Header from "../components/Header";
-import { Carousel } from "react-responsive-carousel";
+// import Header from "../components/Header";
+// import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Nav from "../components/Nav";
 
 function Home() {
-  // const [signUpModal, setSignUpModal] = useState(false);
-
-  const slides = [
-    {
-      imgSrc:
-        "https://ghana.un.org/sites/default/files/styles/hero_header_2xl_1x/public/2021-01/20210126_093917.jpg?itok=UGNACrqY",
-      title: "Slider Image 1",
-      description: "Description for Slider Image 2",
-    },
-    {
-      imgSrc:
-        "https://pencilsofpromise.org/wp-content/uploads/2022/01/ghana_reading2.jpg",
-      title: "Slider Image 2",
-      description: "Description for Slider Image 2",
-    },
-    {
-      imgSrc:
-        "https://www.brookings.edu/wp-content/uploads/2020/07/shutterstock_592676366_small.jpg",
-      title: "Slider Image 3",
-      description: "Description for Slider Image 2",
-    },
-  ];
-
   return (
     <>
       <div className="w-full h-full">
         {/* <Header /> */}
         <Nav />
 
-        {/* The Carousel */}
-
         <div
-          className="flex flex-col w-full h-[100vh] items-center lg:flex-row pt-[100px]"
+          className="flex flex-col w-full h-[100vh] items-center lg:flex-row pt-[100px] bg-cover bg-center relative"
           style={{
             backgroundImage: `url(${backgroundImg})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
           }}
         >
-          <div className="flex flex-col text-white w-full lg:w-1/2 space-y-6 ml-8 sm:mb-0">
-            <h1 className="text-3xl sm:text-5xl font-bold ">
+          {/* Dark Overlay */}
+          <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
+
+          <div className="flex flex-col text-white w-full lg:w-[60%] p-4 lg:pl-[8rem] relative">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold my-8">
               The Education Hub—Where Knowledge Grows and Friendships Flourish
             </h1>
-            <p className="py-2">
+            <p className="text-lg lg:text-xl leading-relaxed mb-8">
               Whatever your academic interest, from mathematics and science to
               literature and arts, there are thousands of learners like you on
               EduHub. Courses are available every day—sign up to embark on your
-              learning journey
+              learning journey.
             </p>
 
-            <div>
-              <Link to="/classes">
-                <button className="rounded-[8px] py-2 bg-[#f50057] text-white px-4 inline-block  hover:no-underline">
-                  Join EduHub Now
-                </button>
-              </Link>
-            </div>
+            <Link to="/classes">
+              <button className="rounded-lg py-2 px-6 bg-[#f50057] text-white hover:bg-opacity-90 transition duration-300">
+                Get Started
+              </button>
+            </Link>
           </div>
-          {/* <div className="w-5/6 lg:w-[27%] mb-6 lg:mb-0">
-            <img src={backgroundImg} alt="" />
-          </div> */}
         </div>
-
-        {/* <div className="w-full h-[50%]">
-          <Carousel autoPlay showThumbs={false} infiniteLoop>
-            {slides.map((slide, index) => (
-              <div key={index}>
-                <img src={slide.imgSrc} alt={slide.title} />
-                <div className="legend">
-                  <h3>{slide.title}</h3>
-                  <p>{slide.description}</p>
-                </div>
-              </div>
-            ))}
-          </Carousel>
-        </div> */}
 
         <div className=" w-full pl-4 sm:px-4 xl:px-0">
           <div className="text-center relative z-10 py-20">
             <h2 className="text-left sm:text-center text-2xl sm:text-3xl font-bold mb-2">
-              How <span className="text-primary">EduHub</span> works
+              How <span className="text-[#f50057]">Edu</span>Hub Works
             </h2>
 
             <p className="text-left sm:text-center w-full sm:w-2/3 lg:w-1/2 mb-10 mx-auto text-[#f50057]">
@@ -173,15 +130,25 @@ function Home() {
           </div>
         </div>
 
-        <h2 className="text-left sm:text-center text-2xl sm:text-3xl font-bold mb-2">
+        <h2 className="text-left p-6 sm:text-center text-2xl sm:text-3xl font-bold mb-2">
           About <span className="text-[#f50057]">Edu</span>Hub
         </h2>
-        <div id="about" className="grid grid-cols-2 gap-4">
+        <div
+          id="about"
+          className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-[5rem] items-center"
+        >
           <div className="w-full h-full">
-            <img src={aboutImg} alt="" className="" />
+            <img
+              src={aboutImg}
+              alt=""
+              className="object-cover h-full w-full rounded-lg shadow-md"
+            />
           </div>
-          <div>
-            <p className="text-2xl ">
+          <div className="p-6 bg-white rounded-lg shadow-md">
+            <h2 className="text-left text-xl sm:text-3xl font-bold mb-2">
+              <span className="text-[#f50057]">Edu</span>Hub
+            </h2>
+            <p className="text-lg text-gray-700">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Molestiae est ipsa quo modi perspiciatis, possimus corporis
               praesentium, aspernatur eveniet assumenda optio, cumque soluta
@@ -189,13 +156,86 @@ function Home() {
             </p>
           </div>
         </div>
+
         <h2 className="text-left sm:text-center text-2xl sm:text-3xl font-bold mb-2">
           Contact <span className="text-[#f50057]">Us</span>
         </h2>
-        <div id="about" className="grid grid-cols-2 gap-4">
-          <div className="w-full h-full"></div>
-          <div></div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+          <div className="flex flex-col justify-center">
+            <div className="flex items-center mb-4 space-x-4">
+              <div className="text-[#f50057]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                  />
+                </svg>
+              </div>
+              <p>YourEmail@example.com</p>
+            </div>
+            <div className="flex items-center mb-4 space-x-4">
+              <div className="text-[#f50057]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2C20 17.5 12 22 12 22z"
+                  />
+                </svg>
+              </div>
+              <p>123 Main Street, City, Country</p>
+            </div>
+            <div className="flex items-center space-x-4">
+              <div className="text-[#f50057]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                  />
+                </svg>
+              </div>
+              <p>(123) 456-7890</p>
+            </div>
+          </div>
+
+          <div className="w-full h-full flex items-center">
+            <img
+              src={contactImage} // Replace with your contact image source
+              alt="Contact Us"
+              className="w-full h-full object-cover rounded-lg"
+            />
+          </div>
         </div>
+
+        <footer className="bg-[#333] text-white text-center py-4">
+          <p>
+            &copy; 2023 <span className="text-[#f50057]">Edu</span>Hub. All
+            rights reserved.
+          </p>
+        </footer>
       </div>
     </>
   );
