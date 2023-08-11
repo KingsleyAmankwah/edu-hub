@@ -2,12 +2,8 @@ import { Link } from "react-router-dom";
 import backgroundImg from "../assets/7.jpg";
 import aboutImg from "../assets/3.jpg";
 import contactImage from "../assets/1.jpg";
-// import SignUp from "../components/SignUp";
-// import Header from "../components/Header";
-// import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Nav from "../components/Nav";
-import AuthorCard from "../components/AuthorCard";
 
 function Home() {
   return (
@@ -146,32 +142,6 @@ function Home() {
               dicta. Dolorem, perferendis! Laboriosam inventore ut numquam.
             </p>
           </div>
-        </div>
-
-        <h2 className="text-left md:text-center text-xl sm:text-3xl font-bold mb-2">
-          <span className="text-[#f50057]">Edu</span>Hub Authors
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-          <AuthorCard
-            name="Author 1"
-            profilePictureSrc={require("../assets/1.jpg")}
-            biography="Biography of Author 1..."
-          />
-          <AuthorCard
-            name="Author 2"
-            profilePictureSrc={require("../assets/2.jpg")}
-            biography="Biography of Author 2..."
-          />
-          <AuthorCard
-            name="Author 3"
-            profilePictureSrc={require("../assets/3.jpg")}
-            biography="Biography of Author 3..."
-          />
-          <AuthorCard
-            name="Author 4"
-            profilePictureSrc={require("../assets/4.jpg")}
-            biography="Biography of Author 3..."
-          />
         </div>
 
         <h2 className="text-left sm:text-center text-2xl sm:text-3xl font-bold mb-2">
