@@ -292,14 +292,18 @@ function Nine() {
 
   return (
     <div
-      className="font-[system-ui] p-[1rem] sm:p-[2rem] mb-[10rem] w-full h-screen"
+      className="font-[system-ui] p-[1rem] sm:p-[2rem] mb-[10rem] w-full h-screen relative"
       style={{
         backgroundImage: `url(${backgroundImg})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
     >
-      <header className="flex justify-between items-center">
+      <div
+        className="absolute inset-0 bg-black opacity-50 z-10"
+        style={{ pointerEvents: "none" }}
+      ></div>
+      <header className="flex justify-between items-center relative z-20">
         <p className="sm:text-3xl lg:text-5xl font-bold text-white">Basic 9</p>
         <Link
           to="/classes"
