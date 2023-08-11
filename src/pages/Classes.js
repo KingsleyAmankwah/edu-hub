@@ -6,6 +6,7 @@ import class2Image from "../assets/6.jpg";
 import class3Image from "../assets/5.jpg";
 
 import { Link } from "react-router-dom";
+import AuthorCard from "../components/AuthorCard";
 
 function Classes() {
   return (
@@ -101,6 +102,33 @@ function Classes() {
 
           {/* Add more classes here */}
         </div>
+      </div>
+
+      <h2 className="text-2xl text-center font-semibold mb-4">Our Authors</h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+        <AuthorCard
+          name="Enoch Frimpong"
+          profilePictureSrc={require("../assets/Frimpong.jpg")}
+          biography="Encoh Frimpong is an experienced ICT teacher dedicated to enhancing the educational landscape. With a passion for technology and education, Encoh is diligently crafting a web-based learning platform tailored for Junior High School students. Leveraging expertise in both information and communication technology, I aim to create an interactive and engaging virtual environment that empowers students to learn effectively. Through innovative design and a deep understanding of pedagogical methods. I am committed to providing students with a seamless and enriching online learning experience that fosters growth and knowledge acquisition...."
+        />
+        <AuthorCard
+          name="Tandoh Emmanuel Kwesi"
+          profilePictureSrc={require("../assets/Tandoh.jpg")}
+          biography="Tandoh Emmanuel Kwesi is an experienced ICT teacher dedicated to enhancing the educational landscape. With a passion for technology and education, Encoh is diligently crafting a web-based learning platform tailored for Junior High School students. Leveraging expertise in both information and communication technology, I aim to create an interactive and engaging virtual environment that empowers students to learn effectively. Through innovative design and a deep understanding of pedagogical methods. I am committed to providing students with a seamless and enriching online learning experience that fosters growth and knowledge acquisition...."
+        />
+        <AuthorCard
+          name="Cocoa Krakye"
+          profilePictureSrc={require("../assets/3.jpg")}
+          biography="Cocoa krakye is an experienced ICT teacher dedicated to enhancing the educational landscape. With a passion for technology and education, Encoh is diligently crafting a web-based learning platform tailored for Junior High School students. Leveraging expertise in both information and communication technology, I aim to create an interactive and engaging virtual environment that empowers students to learn effectively. Through innovative design and a deep understanding of pedagogical methods. I am committed to providing students with a seamless and enriching online learning experience that fosters growth and knowledge acquisition...."
+          // biography="Biography of Author 3..."
+        />
+        <AuthorCard
+          name="Bronxy GH"
+          profilePictureSrc={require("../assets/4.jpg")}
+          // biography="Biography of Author 3..."
+          biography="Bronxy is an experienced ICT teacher dedicated to enhancing the educational landscape. With a passion for technology and education, Encoh is diligently crafting a web-based learning platform tailored for Junior High School students. Leveraging expertise in both information and communication technology, I aim to create an interactive and engaging virtual environment that empowers students to learn effectively. Through innovative design and a deep understanding of pedagogical methods. I am committed to providing students with a seamless and enriching online learning experience that fosters growth and knowledge acquisition...."
+        />
       </div>
 
       <footer className="bg-[#333] text-white text-center py-4">
