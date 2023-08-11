@@ -65,14 +65,10 @@ function Home() {
                   />
                 </div>
                 <div className="text-center">
-                  <a
-                    href="https://www.meetup.com/find/?source=GROUPS"
-                    className="text-viridian"
-                  >
-                    <h3 className="font-semibold text-xl mb-3 text-[#f50057]">
-                      Create an account
-                    </h3>
-                  </a>
+                  <h3 className="font-semibold text-xl mb-3 text-[#f50057]">
+                    Create an account
+                  </h3>
+
                   <p className="text-sm text-center font-normal text-gray7">
                     It’s free to create an account. SignUp now to embark on your
                     learning journey
@@ -89,14 +85,12 @@ function Home() {
                   />
                 </div>
                 <div className="text-center">
-                  <a
-                    href="https://www.meetup.com/find/?source=GROUPS"
-                    className="text-viridian"
-                  >
+                  <Link to="/classes">
                     <h3 className="font-semibold text-xl mb-3 text-[#f50057]">
                       Select class
                     </h3>
-                  </a>
+                  </Link>
+
                   <p className="text-sm text-center font-normal text-gray7">
                     Pick a class you want to join
                   </p>
@@ -112,14 +106,10 @@ function Home() {
                   />
                 </div>
                 <div className="text-center">
-                  <a
-                    href="https://www.meetup.com/find/?source=GROUPS"
-                    className="text-viridian"
-                  >
-                    <h3 className="font-semibold text-xl mb-3 text-[#f50057]">
-                      Start learning
-                    </h3>
-                  </a>
+                  <h3 className="font-semibold text-xl mb-3 text-[#f50057]">
+                    Start learning
+                  </h3>
+
                   <p className="text-sm text-center font-normal text-gray7">
                     At the comfort of your home, you can learn at your own
                     pace...
