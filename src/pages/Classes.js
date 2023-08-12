@@ -128,14 +128,12 @@ function Classes() {
           profilePictureSrc={require("../assets/Bronxy.jpg")}
           // biography="Biography of Author 3..."
           biography="A visionary IT professional. Equipped with Programming, Database and Networking. Passionate about merging education and technology, aims to enhance the learning journey of students through an engaging web platform. 
-
-          **Belief Statement for the  Page
           At Edu hub, we're dedicated to making quality education universally accessible. 
           We envision a future where every junior high is unite with technology and learning, fostering a limitless realm of curiosity and creativity for junior high school students everywhere.
           
           This web-based platform serves as a dynamic hub of knowledge, fostering an engaging and interactive environment that empowers students to thrive academically and personally.
           
-          Join us on this exciting journey of discovery and growth!...."
+          Join us on this exciting journey of discovery and growth!..."
         />
       </div>
 
