@@ -121,19 +121,11 @@ function Classes() {
           name="Cocoa Krakye"
           profilePictureSrc={require("../assets/3.jpg")}
           biography="Cocoa krakye is an experienced ICT teacher dedicated to enhancing the educational landscape. With a passion for technology and education, Encoh is diligently crafting a web-based learning platform tailored for Junior High School students. Leveraging expertise in both information and communication technology, I aim to create an interactive and engaging virtual environment that empowers students to learn effectively. Through innovative design and a deep understanding of pedagogical methods. I am committed to providing students with a seamless and enriching online learning experience that fosters growth and knowledge acquisition...."
-          // biography="Biography of Author 3..."
         />
         <AuthorCard
           name="Prince Nyarko Boahen"
           profilePictureSrc={require("../assets/Bronxy.jpg")}
-          // biography="Biography of Author 3..."
-          biography="A visionary IT professional. Equipped with Programming, Database and Networking. Passionate about merging education and technology, aims to enhance the learning journey of students through an engaging web platform. 
-          At Edu hub, we're dedicated to making quality education universally accessible. 
-          We envision a future where every junior high is unite with technology and learning, fostering a limitless realm of curiosity and creativity for junior high school students everywhere.
-          
-          This web-based platform serves as a dynamic hub of knowledge, fostering an engaging and interactive environment that empowers students to thrive academically and personally.
-          
-          Join us on this exciting journey of discovery and growth!..."
+          biography="A visionary IT professional. Equipped with Programming, Database and Networking. Passionate about merging education and technology, aims to enhance the learning journey of students through an engaging web platform. At Edu hub, we're dedicated to making quality education universally accessible. We envision a future where every junior high is unite with technology and learning, fostering a limitless realm of curiosity and creativity for junior high school students everywhere.This web-based platform serves as a dynamic hub of knowledge, fostering an engaging and interactive environment that empowers students to thrive academically and personally.Join us on this exciting journey of discovery and growth!..."
         />
       </div>
 
