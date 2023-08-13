@@ -46,7 +46,7 @@
 
 ## :dart: About
 
-EduHub is an web based educational platform that give access to free educational materials
+EduHub is a web based educational platform that give access to free educational materials
 to students in Junior High Schools of Ghana.
 
 ## :sparkles: Features
