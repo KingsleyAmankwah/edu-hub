@@ -49,7 +49,7 @@
 EduHub is a web based educational platform that give access to free educational materials
 to students in Junior High Schools of Ghana.
 
-## :sparkles: Features
+<!-- ## :sparkles: Features -->
 
 <!-- :heavy_check_mark: Feature 1;\
 :heavy_check_mark: Feature 2;\
