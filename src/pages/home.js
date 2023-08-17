@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import backgroundImg from "../assets/7.jpg";
 import contactImage from "../assets/1.jpg";
+import aboutImg from "../assets/1.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Nav from "../components/Nav";
 import AuthorCard from "../components/AuthorCard";
@@ -22,13 +23,14 @@ function Home() {
 
           <div className="flex flex-col text-white w-full lg:w-[60%] p-4 lg:pl-[8rem] relative">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold my-8">
-              The Education Hub—Where Knowledge Grows and Friendships Flourish
+              iEduGH- Improved COMPUTING Educational Experience; anytime and
+              anywhere
             </h1>
             <p className="text-lg lg:text-xl leading-relaxed mb-8">
-              Whatever your academic interest, from mathematics and science to
-              literature and arts, there are thousands of learners like you on
-              EduHub. Courses are available every day—sign up to embark on your
-              learning journey.
+              COMPUTING EDUCATION GHANA is Hub that provides a source of
+              learning experiences for learners and teaching resources. We
+              ensure increase the success of students in their learning journey
+              of COMPUTING
             </p>
 
             <Link to="/classes">
@@ -42,7 +44,7 @@ function Home() {
         <div className=" w-full pl-4 sm:px-4 xl:px-0">
           <div className="text-center relative z-10 py-20">
             <h2 className="text-left sm:text-center text-2xl sm:text-3xl font-bold mb-2">
-              How <span className="text-[#f50057]">Edu</span>Hub Works
+              How <span className="text-[#f50057]">iEdu</span>GH Works
             </h2>
 
             <p className="text-left sm:text-center w-full sm:w-2/3 lg:w-1/2 mb-10 mx-auto text-[#f50057]">
@@ -117,11 +119,9 @@ function Home() {
         </div>
 
         <h2 className="text-left p-6 sm:text-center text-2xl sm:text-3xl font-bold mb-2">
-          About <span className="text-[#f50057]">Edu</span>Hub
+          About <span className="text-[#f50057]">iEdu</span>GH
         </h2>
-        {/* <div
-          className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-[5rem] items-center"
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-[5rem] items-center">
           <div className="w-full h-full">
             <img
               src={aboutImg}
@@ -131,16 +131,24 @@ function Home() {
           </div>
           <div className="p-6 bg-white rounded-lg shadow-md">
             <h2 className="text-left text-xl sm:text-3xl font-bold mb-2">
-              <span className="text-[#f50057]">Edu</span>Hub
+              <span className="text-[#f50057]">iEdu</span>GH
             </h2>
             <p className="text-lg text-gray-700">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Molestiae est ipsa quo modi perspiciatis, possimus corporis
-              praesentium, aspernatur eveniet assumenda optio, cumque soluta
-              dicta. Dolorem, perferendis! Laboriosam inventore ut numquam.
+              iEduGH; COMPUTING EDUCATION GHANA is Hub that provides a source of
+              learning experiences for learners and teaching resources. We
+              ensure increase the success of students in their learning journey
+              of COMPUTING. Our platform offers access to digital textbooks,
+              interactive videos, and educational games that can help to engage
+              students and make learning more enjoyable. We seek to balance
+              between pedagogical flexibility for instructors and dynamic
+              experiences for students with individual and diverse leaning
+              needs. Our platform has learning effectiveness tools that creates
+              flexible, efficient environments that support present INFORMATION
+              COMMUNICATION AND TECHNOLOGY education as it’s happening instead
+              of asking education to fit the technology.
             </p>
           </div>
-        </div> */}
+        </div>
 
         <h2 className="text-2xl text-center font-semibold mb-4">Our Authors</h2>
 
@@ -153,12 +161,12 @@ function Home() {
           <AuthorCard
             name="Tandoh Emmanuel Kwesi"
             profilePictureSrc={require("../assets/Tandoh.jpg")}
-            biography="Tandoh Emmanuel Kwesi is an experienced ICT teacher dedicated to enhancing the educational landscape. With a passion for technology and education, Encoh is diligently crafting a web-based learning platform tailored for Junior High School students. Leveraging expertise in both information and communication technology, I aim to create an interactive and engaging virtual environment that empowers students to learn effectively. Through innovative design and a deep understanding of pedagogical methods. I am committed to providing students with a seamless and enriching online learning experience that fosters growth and knowledge acquisition...."
+            biography="Emmanuel Kwesi Tandoh is young leader, public Speaker and Debater, IT Educator. He has interest in youth activism for change and progress, whilst being passionate about using technology and innovation that leads to positive impact. I believe we can make Africa bright and our world a better place with IT and innovation."
           />
           <AuthorCard
-            name="Cocoa Krakye"
-            profilePictureSrc={require("../assets/3.jpg")}
-            biography="Cocoa krakye is an experienced ICT teacher dedicated to enhancing the educational landscape. With a passion for technology and education, Encoh is diligently crafting a web-based learning platform tailored for Junior High School students. Leveraging expertise in both information and communication technology, I aim to create an interactive and engaging virtual environment that empowers students to learn effectively. Through innovative design and a deep understanding of pedagogical methods. I am committed to providing students with a seamless and enriching online learning experience that fosters growth and knowledge acquisition...."
+            name="Felix Agyapong"
+            profilePictureSrc={require("../assets/Felix.jpg")}
+            biography="Felix Agyapong is the name, a graphic  and  web(front end)designer with ambition to explore and work as a cyber security expert, also an good in photography and software management"
           />
           <AuthorCard
             name="Prince Nyarko Boahen"
@@ -189,7 +197,7 @@ function Home() {
                   />
                 </svg>
               </div>
-              <p>YourEmail@example.com</p>
+              <p>lastminutenyame@example.com</p>
             </div>
             <div className="flex items-center mb-4 space-x-4">
               <div className="text-[#f50057]">
@@ -208,7 +216,7 @@ function Home() {
                   />
                 </svg>
               </div>
-              <p>123 Main Street, City, Country</p>
+              <p>Kumasi, Ghana</p>
             </div>
             <div className="flex items-center space-x-4">
               <div className="text-[#f50057]">
@@ -227,13 +235,13 @@ function Home() {
                   />
                 </svg>
               </div>
-              <p>(123) 456-7890</p>
+              <p>0557511017</p>
             </div>
           </div>
 
           <div className="w-full h-full flex items-center">
             <img
-              src={contactImage} // Replace with your contact image source
+              src={contactImage}
               alt="Contact Us"
               className="w-full h-full object-cover rounded-lg"
             />
@@ -242,7 +250,7 @@ function Home() {
 
         <footer className="bg-[#333] text-white text-center py-4">
           <p>
-            &copy; 2023 <span className="text-[#f50057]">Edu</span>Hub. All
+            &copy; 2023 <span className="text-[#f50057]">iEdu</span>GH. All
             rights reserved.
           </p>
         </footer>
