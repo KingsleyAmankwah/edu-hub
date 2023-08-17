@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import backgroundImg from "../assets/7.jpg";
 import contactImage from "../assets/1.jpg";
-import aboutImg from "../assets/1.jpg";
+import aboutImg from "../assets/3.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Nav from "../components/Nav";
 import AuthorCard from "../components/AuthorCard";
