@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import backgroundImg from "../assets/7.jpg";
-import contactImage from "../assets/1.jpg";
+import contactImage from "../assets/about.jpg";
 import aboutImg from "../assets/3.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Nav from "../components/Nav";
-import AuthorCard from "../components/AuthorCard";
+// import AuthorCard from "../components/AuthorCard";
 
 function Home() {
   return (
@@ -150,9 +150,9 @@ function Home() {
           </div>
         </div>
 
-        <h2 className="text-2xl text-center font-semibold mb-4">Our Authors</h2>
+        {/* <h2 className="text-2xl text-center font-semibold mb-4">Our Authors</h2>  */}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8" id="about">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8" id="about">
           <AuthorCard
             name="Enoch Frimpong"
             profilePictureSrc={require("../assets/Frimpong.jpg")}
@@ -173,7 +173,7 @@ function Home() {
             profilePictureSrc={require("../assets/Bronxy.jpg")}
             biography="A visionary IT professional. Equipped with Programming, Database and Networking. Passionate about merging education and technology, aims to enhance the learning journey of students through an engaging web platform. At Edu hub, we're dedicated to making quality education universally accessible. We envision a future where every junior high is unite with technology and learning, fostering a limitless realm of curiosity and creativity for junior high school students everywhere.This web-based platform serves as a dynamic hub of knowledge, fostering an engaging and interactive environment that empowers students to thrive academically and personally.Join us on this exciting journey of discovery and growth!..."
           />
-        </div>
+        </div> */}
 
         <h2 className="text-left sm:text-center text-2xl sm:text-3xl font-bold mb-2">
           Contact <span className="text-[#f50057]">Us</span>

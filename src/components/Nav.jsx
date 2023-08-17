@@ -12,10 +12,10 @@ const Nav = () => {
         <a href="/" className="hover:text-[#f50057]">
           Home
         </a>
-        <a href="#about" className="hover:text-[#f50057]">
+        <a href="/about" className="hover:text-[#f50057]">
           About Us
         </a>
-        <a href="#contact" className="hover:text-[#f50057]">
+        <a href="/contact" className="hover:text-[#f50057]">
           Contact Us
         </a>
       </div>

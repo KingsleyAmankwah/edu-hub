@@ -53,9 +53,12 @@ function Classes() {
             />
             <h3 className="text-lg font-semibold mb-2">Basic 7</h3>
             <p className="text-sm text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              cursus ante dapibus diam. Sed nisi nulla, cursus ac purus nec.
+              In the Ghana computing course, students explore the foundations of
+              computer science, including programming languages, algorithms, and
+              data structures. This class provides a solid introduction to the
+              world of computing.
             </p>
+
             <Link to="/seven">
               <button className="mt-3 bg-[#f50057] text-white py-1 px-3 rounded-md hover:bg-opacity-90 transition duration-300">
                 Learn More
@@ -72,8 +75,10 @@ function Classes() {
             />
             <h3 className="text-lg font-semibold mb-2">Basic 8</h3>
             <p className="text-sm text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              cursus ante dapibus diam. Sed nisi nulla, cursus ac purus nec.
+              Students in the basic 8 class of the Ghana computing course dive
+              deeper into software development concepts. They learn about
+              software engineering practices, user interface design, and
+              collaborative coding techniques.
             </p>
             <Link to="/eight">
               <button className="mt-3 bg-[#f50057] text-white py-1 px-3 rounded-md hover:bg-opacity-90 transition duration-300">
@@ -90,8 +95,10 @@ function Classes() {
             />
             <h3 className="text-lg font-semibold mb-2">Basic 9</h3>
             <p className="text-sm text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              cursus ante dapibus diam. Sed nisi nulla, cursus ac purus nec.
+              The advanced concepts covered in the basic 9 class of the Ghana
+              computing course include database management, network protocols,
+              and cybersecurity. Students gain a comprehensive understanding of
+              the intricate aspects of computing.
             </p>
             <Link to="/nine">
               <button className="mt-3 bg-[#f50057] text-white py-1 px-3 rounded-md hover:bg-opacity-90 transition duration-300">

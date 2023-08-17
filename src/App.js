@@ -6,8 +6,10 @@ import Home from "./pages/Home";
 import Seven from "./pages/Seven";
 import Eight from "./pages/Eight";
 import Nine from "./pages/Nine";
-import Test from "./pages/Test";
+// import Test from "./pages/Test";
 import Classes from "./pages/Classes";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -18,8 +20,9 @@ function App() {
           <Route path="/seven" element={<Seven />} />
           <Route path="/eight" element={<Eight />} />
           <Route path="/nine" element={<Nine />} />
-          <Route path="/test" element={<Test />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/classes" element={<Classes />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
 
