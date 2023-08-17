@@ -4,8 +4,8 @@ const Nav = () => {
   return (
     <div className="py-2 px-4 h-[10vh] flex justify-between w-full items-center z-40 shadow-lg">
       <div className="flex justify-center items-center w-[20%] gap-5">
-        <img className="hidden md:flex" src={Logo} alt="EduHub_Logo" />
-        <span className="font-[500] text-sm"> EduHub</span>
+        <img className="hidden md:flex" src={Logo} alt="iEduGH_Logo" />
+        <span className="font-[500] text-sm"> iEduGH</span>
       </div>
 
       <div className="flex justify-around items-center w-[50%] text-sm ">
