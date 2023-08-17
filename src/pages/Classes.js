@@ -24,13 +24,13 @@ function Classes() {
 
         <div className="flex flex-col text-white w-full lg:w-[60%] p-2 lg:pl-[8rem] relative">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold my-8">
-            The Education Hub—Where Knowledge Grows and Friendships Flourish
+            iEduGH- Improved COMPUTING Educational Experience; anytime and
+            anywhere
           </h1>
           <p className="text-lg lg:text-xl leading-relaxed mb-8">
-            Whatever your academic interest, from mathematics and science to
-            literature and arts, there are thousands of learners like you on
-            EduHub. Courses are available every day—sign up to embark on your
-            learning journey.
+            COMPUTING EDUCATION GHANA is Hub that provides a source of learning
+            experiences for learners and teaching resources. We ensure increase
+            the success of students in their learning journey of COMPUTING
           </p>
 
           {/* <Link to="/">
@@ -131,7 +131,7 @@ function Classes() {
 
       <footer className="bg-[#333] text-white text-center py-4">
         <p>
-          &copy; 2023 <span className="text-[#f50057]">Edu</span>Hub. All rights
+          &copy; 2023 <span className="text-[#f50057]">iEdu</span>GH. All rights
           reserved.
         </p>
       </footer>
