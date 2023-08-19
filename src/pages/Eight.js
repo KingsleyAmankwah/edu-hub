@@ -14,17 +14,20 @@ function Eight() {
           lessons: [
             {
               title: "Lesson 1: Perceptual Computing",
-              description: "Welcome to our lesson on output devices!",
+              description:
+                "Explore the world of output devices in computing. Learn how perceptual computing enhances user experiences",
               link: "https://group95iteh.edublogs.org/2022/09/09/perceptual-computing/",
             },
             {
               title: "Lesson 2: Output Devices",
-              description: "Welcome to our lesson on output devices!",
+              description:
+                "Delve into the realm of output devices and their significance in computing systems.",
               link: "https://group96wearabledevices.blogspot.com/2022/08/wearable-displays.html",
             },
             {
               title: "Lesson 3: Personalizing Computer Desktop",
-              description: "Welcome to our lesson on full-sized external",
+              description:
+                "Customize your computer desktop and discover the benefits of using full-sized external devices",
               link: "https://sites.google.com/view/ite3hgroup98/home",
             },
             // Add more lessons for Sub Strand 1 as needed...
@@ -35,12 +38,14 @@ function Eight() {
           lessons: [
             {
               title: "Lesson 1: Proposed Solutions To Problems",
-              description: "Lorem ipsum dolor sit amet consectetur adipisicing",
+              description:
+                "Investigate technological solutions to community problems and their potential impact",
               link: "https://aitegroup1012.blogspot.com/2022/10/technological-solutions-to-problems-in.html",
             },
             {
               title: "Lesson 2: Solving Problems Using Technology.",
-              description: "Lorem ipsum dolor sit amet consectetur adipisicing",
+              description:
+                "Explore how technology can be employed to address challenges within communities",
               link: "https://erichjoey.blogspot.com/2022/09/problems-in-community-that-can-be.html",
             },
           ],
@@ -50,12 +55,14 @@ function Eight() {
           lessons: [
             {
               title: "Lesson 1: Health & In The Use of ICT Tools",
-              description: "Lorem ipsum dolor sit amet consectetur adipisicing",
+              description:
+                "Learn about health considerations while using ICT tools and how to maintain well-being at the computer workstation",
               link: "https://oakmaurice1.edublogs.org/2022/09/23/health-issues-at-the-computer-workstation/",
             },
             {
               title: "Lesson 2: Risk Reduction at Workstation",
-              description: "Lorem ipsum dolor sit amet consectetur adipisicing",
+              description:
+                "Discover strategies to reduce risks and promote safety in a computer workstation environment",
               link: "https://group104ite300h.edublogs.org/",
             },
           ],
@@ -71,19 +78,20 @@ function Eight() {
           lessons: [
             {
               title: "Lesson 1: How To Use Microsoft Word",
-              description: "Lorem",
+              description:
+                "Learn the essentials of using Microsoft Word for efficient document creation and formatting",
               link: "https://sites.google.com/view/ite300hgroup105/home   ",
             },
             {
               title: "Lesson 2: Use of SmartArt",
               description:
-                "Welcome to our lesson on full-sized external hard disk drive!",
+                "Uncover the capabilities of SmartArt in enhancing document visuals and layout",
               link: "https://sites.google.com/view/group-106-300-h/lessons/podcast",
             },
             {
               title: "Lesson 3: How To Add Multimedia",
               description:
-                "Welcome to our lesson on full-sized external hard disk drive!",
+                "Incorporate multimedia elements into your documents to make them engaging and informative",
               link: "https://sites.google.com/view/group-107-ite300j/home",
             },
           ],
@@ -93,17 +101,20 @@ function Eight() {
           lessons: [
             {
               title: "Lesson 1: How To Add Pictures & Screenshots",
-              description: "Lorem ipsum dolor sit amet consectetur adipisicing",
+              description:
+                "Master the art of adding images and screenshots to presentations for impactful visual communication",
               link: "https://sites.google.com/view/assiggroup109",
             },
             {
               title: "Lesson 2: Slides Animation In Powerpoint",
-              description: "Lorem ipsum dolor sit amet consectetur adipisicing",
+              description:
+                "Explore slide animations in PowerPoint to create dynamic and captivating presentations",
               link: "https://sites.google.com/view/ite300bgroup10/home?authuser=0",
             },
             {
               title: "Lesson 3: Adding charts In Powerpoint",
-              description: "Lorem ipsum dolor sit amet consectetur ad",
+              description:
+                "Learn how to incorporate charts and graphs to present data effectively in PowerPoint",
               link: "https://sites.google.com/view/group-110",
             },
           ],
@@ -113,12 +124,14 @@ function Eight() {
           lessons: [
             {
               title: "Lesson 1: Create & Present Desktop Published Document",
-              description: "Lorem ipsum dolor sit amet consectetur adipisicing",
+              description:
+                "Dive into the world of desktop publishing and create visually appealing documents for various purposes",
               link: "https://brightdk.edublogs.org/introduction-to-desktop-publishing/",
             },
             {
               title: "Lesson 2: Desktop Published Document",
-              description: "Lorem ipsum dolor sit amet consectetur adipisicing",
+              description:
+                "Explore the intricacies of desktop publishing and its applications in document creation",
               link: "https://sites.google.com/view/group-112/home?authuser=0",
             },
           ],
@@ -128,17 +141,20 @@ function Eight() {
           lessons: [
             {
               title: "Lesson 1: How To Use Spreadsheet",
-              description: "Lorem ipsum dolor sit amet consectetur adipisicing",
+              description:
+                "Discover the versatility of spreadsheets and how they can be used for data management and analysis",
               link: "https://sites.google.com/view/how-to-use-spreadsheet/home",
             },
             {
               title: "Lesson 2: Desktop Published Document",
-              description: "Lorem ipsum dolor sit amet consectetur adipisicing",
+              description:
+                " Continue your journey into desktop publishing, exploring more advanced techniques",
               link: "https://sites.google.com/view/group115/home",
             },
             {
               title: "Lesson 3: The Use of Data & Pivot Tables",
-              description: "Lorem ipsum dolor sit amet consectetur adipisicing",
+              description:
+                " Learn about data manipulation and analysis using spreadsheets, including pivot tables.",
               link: "https://sites.google.com/view/introduction-to-spreadsheet/",
             },
           ],
@@ -154,12 +170,14 @@ function Eight() {
           lessons: [
             {
               title: "Lesson 1: E-commerce",
-              description: "Lorem",
+              description:
+                " Delve into the realm of e-commerce and its role in modern business transactions",
               link: "https://sites.google.com/view/lessonone-commerceandcashless/home",
             },
             {
               title: "Lesson 2: E-learning Potentials",
-              description: "lorem",
+              description:
+                " Explore the potential of e-learning and its benefits in education and skill development",
               link: "https://sites.google.com/view/elearning-potentials/home?authuser=0",
             },
           ],
@@ -169,7 +187,8 @@ function Eight() {
           lessons: [
             {
               title: "Lesson 1: Concepts of Social Media",
-              description: "Lorem ipsum dolor sit amet consectetur adipisicing",
+              description:
+                "Gain insight into the concepts and impact of social media on communication and society",
               link: "https://sites.google.com/view/intro-to-social-media/concept-of-social-media",
             },
           ],
@@ -178,13 +197,15 @@ function Eight() {
           title: "Sub Strand 3: Information Security",
           lessons: [
             {
-              title: "Lesson 1: Cyberbulling & Digital Footprints",
-              description: "Lorem ipsum dolor sit amet consectetur adipisicing",
+              title: "Lesson 1: Cyberbullying & Digital Footprints",
+              description:
+                "Examine the importance of information security and the implications of cyberbullying and digital footprints",
               link: "https://sites.google.com/view/group121itej/lessons/ten10-information-hacking-techniques-and-their-explanations",
             },
             {
               title: "Lesson 2: Information Hacking",
-              description: "Lorem ipsum dolor sit amet consectetur adipisicing",
+              description:
+                "Explore information hacking techniques and strategies to safeguard digital information",
               link: "https://sites.google.com/view/group121itej/lessons/ten10-information-hacking-techniques-and-their-explanations",
             },
           ],
@@ -194,12 +215,14 @@ function Eight() {
           lessons: [
             {
               title: "Lesson 1: Creating Blogs",
-              description: "Lorem ipsum dolor sit amet consectetur adipisicing",
+              description:
+                "Learn the fundamentals of creating blogs and their significance in online communication",
               link: "https://sites.google.com/view/group-122-blogging/home",
             },
             {
               title: "Lesson 2: Web Browsers",
-              description: "Lorem ipsum dolor sit amet consectetur adipisicing",
+              description:
+                "Discover web browsers and their role in accessing and navigating the online world",
               link: "https://socialblog101.edublogs.org/",
             },
           ],
@@ -215,12 +238,14 @@ function Eight() {
           lessons: [
             {
               title: "Lesson 1: Concepts of Programming",
-              description: "Lorem",
+              description:
+                "Explore foundational concepts of programming and their relevance in software development",
               link: "https://ite3cgroup126.edublogs.org/2022/08/24/integrated-development-environment-ide/ ",
             },
             {
               title: "Lesson 2: Integrated Development Environment",
-              description: "Lorem",
+              description:
+                "Familiarize yourself with integrated development environments and their role in efficient coding",
               link: "https://ite3cgroup126.edublogs.org/2022/08/24/integrated-development-environment-ide/ ",
             },
           ],
@@ -230,12 +255,14 @@ function Eight() {
           lessons: [
             {
               title: "Lesson 1: Flowchart & Pseudocode",
-              description: "Lorem ipsum dolor sit amet consectetur adipisicing",
+              description:
+                "Learn how to represent algorithms using flowcharts and pseudocode for effective problem-solving",
               link: "https://andrewsnyaaba.edublogs.org/",
             },
             {
               title: "Lesson 2: Flowchart Algorithm to Pseudocode",
-              description: "Lorem ipsum dolor sit amet consectetur adipisicing",
+              description:
+                "Dive deeper into algorithmic thinking and its application in converting flowcharts to pseudocode",
               link: "https://group128dradasa.blogspot.com/2022/09/computational-thinking.html",
             },
           ],
@@ -245,7 +272,8 @@ function Eight() {
           lessons: [
             {
               title: "Lesson 1: Robots Concept",
-              description: "Lorem ipsum dolor sit amet consectetur adipisicin",
+              description:
+                "Discover the world of robotics and gain insights into the concept and applications of robots",
               link: "bignature82.edublogs.org",
             },
           ],
@@ -255,7 +283,8 @@ function Eight() {
           lessons: [
             {
               title: "Lesson 1: Knowledge Based Systems",
-              description: "Lorem ipsum dolor sit amet consectetur adipisicing",
+              description:
+                "Explore knowledge-based systems and their role in artificial intelligence and decision-making",
               link: "https://flexai.blogspot.com/ ",
             },
           ],
