@@ -46,8 +46,7 @@
 
 ## :dart: About
 
-EduHub is a web based educational platform that give access to free educational materials
-to students in Junior High Schools of Ghana.
+iEduGH which Stands for Improved EDUCATION GHANA is Hub that provides a source of learning experiences for learners and teaching resources. It ensure increase the success of students in their learning journey of Computing in Ghanaian Junior High Schools
 
 <!-- ## :sparkles: Features -->
 
