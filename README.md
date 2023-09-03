@@ -27,7 +27,7 @@
 <!-- Status -->
 
  <h4 align="center"> 
-	🚧  Edu Hub 🚀 Under construction...  🚧
+	🚧  iEduGH 🚀 Under construction...  🚧
 </h4>
 
 <hr>
