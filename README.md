@@ -3,10 +3,11 @@
 
 &#xa0;
 
-  <!-- <a href="https://eduhub.netlify.app">Demo</a> -->
+<a href="https://i-edugh.vercel.app/">Demo🚀</a>
+
 </div>
 
-<h1 align="center">Edu Hub</h1>
+<h1 align="center">iEduGH</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/KingsleyAmankwah/edu-hub?color=56BEB8">
@@ -27,7 +28,7 @@
 <!-- Status -->
 
  <h4 align="center"> 
-	🚧  iEduGH 🚀 Under construction...  🚧
+	🚧  iEduGH 🚀 In Production...  🚧
 </h4>
 
 <hr>
