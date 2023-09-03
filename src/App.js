@@ -6,7 +6,6 @@ import Home from "./pages/Home";
 import Seven from "./pages/Seven";
 import Eight from "./pages/Eight";
 import Nine from "./pages/Nine";
-// import Test from "./pages/Test";
 import Classes from "./pages/Classes";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
