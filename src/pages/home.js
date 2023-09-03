@@ -54,7 +54,7 @@ function Home() {
               <div className="flex flex-col w-full items-center space-y-2 px-6">
                 <div className="mt-3 md:mt-0">
                   <img
-                    alt=""
+                    alt="Create_Account_Image"
                     src="https://secure.meetupstatic.com/next/images/shared/handsUp.svg?w=384"
                     width="160"
                     height="151"
@@ -74,7 +74,7 @@ function Home() {
               <div className="flex flex-col w-full  items-center space-y-2 px-6">
                 <div className="mt-3 md:mt-0 i9prqz1">
                   <img
-                    alt=""
+                    alt="Pick_Class_Image"
                     src="https://secure.meetupstatic.com/next/images/shared/joinGroup.svg?w=384"
                     width="160"
                     height="151"
@@ -95,7 +95,7 @@ function Home() {
               <div className="flex flex-col w-full items-center space-y-2 px-6">
                 <div className="mt-3 md:mt-0 i9prqz1">
                   <img
-                    alt=""
+                    alt="Start_learning_Image"
                     src="https://secure.meetupstatic.com/next/images/shared/ticket.svg?w=384"
                     width="160"
                     height="151"
@@ -123,7 +123,7 @@ function Home() {
           <div className="w-full h-full">
             <img
               src={aboutImg}
-              alt=""
+              alt="About_image"
               className="object-cover h-full w-full rounded-lg shadow-md"
             />
           </div>
