@@ -3,6 +3,10 @@
 
 &#xa0;
 
+## :dart: About
+
+iEduGH which Stands for Improved EDUCATION GHANA is Hub that provides a source of learning experiences for learners and teaching resources. It ensure increase the success of students in their learning journey of Computing in Ghanaian Junior High Schools
+
 <a href="https://i-edugh.vercel.app/">Demo🚀</a>
 
 </div>
@@ -44,10 +48,6 @@
 </p>
 
 <br>
-
-## :dart: About
-
-iEduGH which Stands for Improved EDUCATION GHANA is Hub that provides a source of learning experiences for learners and teaching resources. It ensure increase the success of students in their learning journey of Computing in Ghanaian Junior High Schools
 
 <!-- ## :sparkles: Features -->
 
