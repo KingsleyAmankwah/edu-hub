@@ -2,9 +2,7 @@ import { Link } from "react-router-dom";
 import backgroundImg from "../assets/7.jpg";
 import contactImage from "../assets/about.jpg";
 import aboutImg from "../assets/3.jpg";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Nav from "../components/Nav";
-// import AuthorCard from "../components/AuthorCard";
 
 function Home() {
   return (
@@ -149,31 +147,6 @@ function Home() {
             </p>
           </div>
         </div>
-
-        {/* <h2 className="text-2xl text-center font-semibold mb-4">Our Authors</h2>  */}
-
-        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8" id="about">
-          <AuthorCard
-            name="Enoch Frimpong"
-            profilePictureSrc={require("../assets/Frimpong.jpg")}
-            biography="Encoh Frimpong is an experienced ICT teacher dedicated to enhancing the educational landscape. With a passion for technology and education, Encoh is diligently crafting a web-based learning platform tailored for Junior High School students. Leveraging expertise in both information and communication technology, I aim to create an interactive and engaging virtual environment that empowers students to learn effectively. Through innovative design and a deep understanding of pedagogical methods. I am committed to providing students with a seamless and enriching online learning experience that fosters growth and knowledge acquisition...."
-          />
-          <AuthorCard
-            name="Tandoh Emmanuel Kwesi"
-            profilePictureSrc={require("../assets/Tandoh.jpg")}
-            biography="Emmanuel Kwesi Tandoh is young leader, public Speaker and Debater, IT Educator. He has interest in youth activism for change and progress, whilst being passionate about using technology and innovation that leads to positive impact. I believe we can make Africa bright and our world a better place with IT and innovation."
-          />
-          <AuthorCard
-            name="Felix Agyapong"
-            profilePictureSrc={require("../assets/Felix.jpg")}
-            biography="Felix Agyapong is the name, a graphic  and  web(front end)designer with ambition to explore and work as a cyber security expert, also an good in photography and software management"
-          />
-          <AuthorCard
-            name="Prince Nyarko Boahen"
-            profilePictureSrc={require("../assets/Bronxy.jpg")}
-            biography="A visionary IT professional. Equipped with Programming, Database and Networking. Passionate about merging education and technology, aims to enhance the learning journey of students through an engaging web platform. At Edu hub, we're dedicated to making quality education universally accessible. We envision a future where every junior high is unite with technology and learning, fostering a limitless realm of curiosity and creativity for junior high school students everywhere.This web-based platform serves as a dynamic hub of knowledge, fostering an engaging and interactive environment that empowers students to thrive academically and personally.Join us on this exciting journey of discovery and growth!..."
-          />
-        </div> */}
 
         <h2 className="text-left sm:text-center text-2xl sm:text-3xl font-bold mb-2">
           Contact <span className="text-[#f50057]">Us</span>
