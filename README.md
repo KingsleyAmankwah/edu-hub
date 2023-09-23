@@ -13,21 +13,6 @@ iEduGH which Stands for Improved EDUCATION GHANA is Hub that provides a source o
 
 <h1 align="center">iEduGH</h1>
 
-<p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/KingsleyAmankwah/edu-hub?color=56BEB8">
-
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/KingsleyAmankwah/edu-hub?color=56BEB8">
-
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/KingsleyAmankwah/edu-hub?color=56BEB8">
-
-  <img alt="License" src="https://img.shields.io/github/license/KingsleyAmankwah/edu-hub?color=56BEB8">
-
-  <img alt="Github issues" src="https://img.shields.io/github/issues/KingsleyAmankwah/edu-hub?color=56BEB8" />
-
-  <img alt="Github forks" src="https://img.shields.io/github/forks/KingsleyAmankwah/edu-hub?color=56BEB8" />
-
-  <img alt="Github stars" src="https://img.shields.io/github/stars/KingsleyAmankwah/edu-hub?color=56BEB8" />
-</p>
 
 <!-- Status -->
 
@@ -49,11 +34,6 @@ iEduGH which Stands for Improved EDUCATION GHANA is Hub that provides a source o
 
 <br>
 
-<!-- ## :sparkles: Features -->
-
-<!-- :heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3; -->
 
 ## :rocket: Technologies
 
@@ -69,17 +49,15 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 ## :checkered_flag: Starting
 
 ```bash
-# Clone this project
-$ git clone https://github.com/KingsleyAmankwah/edu-hub
 
 # Access
 $ cd edu-hub
 
 # Install dependencies
-$ yarn
+$ Run npm i
 
-# Run the project
-$ yarn start
+# Run the project using
+$ npm start
 
 # The server will initialize in the <http://localhost:3000>
 ```
@@ -88,7 +66,6 @@ $ yarn start
 
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
-Made with :heart: by <a href="https://github.com/KingsleyAmankwah" target="_blank">Kingsley✨</a>
 
 &#xa0;
 
